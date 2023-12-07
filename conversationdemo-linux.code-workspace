@@ -107,6 +107,7 @@
 		"cmake.automaticReconfigure": false,
 		"cmake.configureOnEdit": false,
 		"cmake.setBuildTypeOnMultiConfig": true,
-		"terminal.integrated.shellIntegration.suggestEnabled": true
+		"terminal.integrated.shellIntegration.suggestEnabled": true,
+		"C_Cpp.intelliSenseEngine": "disabled"
 	}
 }
