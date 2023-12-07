@@ -6,6 +6,80 @@
         "patch": 0
     },
     "include": [
-        "user/cmake/engine/CMakePresets.json"
+        "./user/cmake/engine/CMakePresets.json"
+    ],
+    "configurePresets": [
+        {
+            "name": "ConversationDemo-default",
+            "description": "",
+            "hidden": true
+        },
+        {
+            "name": "ConversationDemo-linux",
+            "displayName": "ConversationDemo  (Linux)",
+            "description": "ConversationDemo Linux default configuration",
+            "binaryDir": "${sourceDir}/build/linux",
+            "inherits": [
+                "linux-ninja",
+                "no-unity",
+                "linux-non-monolithic"
+            ],
+            "cacheVariables": {
+                "AZ_USE_PHYSX5": {
+                    "type": "BOOL",
+                    "value": true
+                },
+                "BUILD_TESTING": {
+                    "type": "BOOL",
+                    "value": true
+                },
+                "LY_DISABLE_TEST_MODULES": {
+                    "type": "BOOL",
+                    "value": false
+                },
+                "CMAKE_C_COMPILER": {
+                    "type": "STRING",
+                    "value": "clang-14"
+                },
+                "CMAKE_CXX_COMPILER": {
+                    "type": "STRING",
+                    "value": "clang++-14"
+                }
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "ConversationDemo-linux",
+            "description": "",
+            "hidden": false,
+            "configurePreset": "ConversationDemo-linux",
+            "inherits": [
+                "debug"
+            ],
+            "targets": [
+                "AssetProcessor",
+                "Editor",
+                "ConversationDemo",
+                "Conversation",
+                "Conversation.Tests",
+                "Conversation.Editor",
+                "Conversation.Editor.Tests",
+                "ConversationCanvas"
+            ]
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "ConversationDemo-tests-linux",
+            "description": "Builds the smoke and main test suite dependencies",
+            "hidden": false,
+            "configurePreset": "ConversationDemo-linux",
+            "filter": {
+                "include": {
+                    "name": "Dialogue*"
+                }
+            }
+        }
     ]
 }

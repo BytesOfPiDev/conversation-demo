@@ -1,0 +1,10 @@
+---
+Checks: 'modernize-*, cppcoreguidelines-*, bugprone-*, clang-analyzer-*, performance-*'
+WarningsAsErrors: ''
+HeaderFilterRegex: ''
+AnalyzeTemporaryDtors: false
+FormatStyle: none
+CheckOptions:
+  - key: modernize-loop-convert.MinConfidence
+    value: reasonable
+...
