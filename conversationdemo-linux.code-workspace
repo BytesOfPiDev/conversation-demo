@@ -1,0 +1,112 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+	],
+	"settings": {
+		"cmake.autoSelectActiveFolder": false,
+		"dotnet.defaultSolution": "disable",
+		"cmake.buildDirectory": "${workspaceFolder}/build/linux",
+		"cmake.parallelJobs": 0,
+		"cmake.configureSettings": {},
+		"cmake.defaultVariants": {
+			"buildType": {
+				"default": "profile",
+				"description": "The build type.",
+				"choices": {
+					"debug": {
+						"short": "debug",
+						"long": "Disable optimizations - include debug information.",
+						"buildType": "debug"
+					},
+					"release": {
+						"short": "release",
+						"long": "Optimize for speed - exclude debug information.",
+						"buildType": "release"
+					},
+					"profile": {
+						"short": "profile",
+						"long": "Optimize for debug and run.",
+						"buildType": "profile",
+					}
+				}
+			}
+		},
+		"files.associations": {
+			"atomic": "cpp",
+			"bitset": "cpp",
+			"charconv": "cpp",
+			"chrono": "cpp",
+			"complex": "cpp",
+			"deque": "cpp",
+			"exception": "cpp",
+			"filesystem": "cpp",
+			"forward_list": "cpp",
+			"fstream": "cpp",
+			"functional": "cpp",
+			"future": "cpp",
+			"istream": "cpp",
+			"iterator": "cpp",
+			"list": "cpp",
+			"map": "cpp",
+			"memory": "cpp",
+			"mutex": "cpp",
+			"optional": "cpp",
+			"ostream": "cpp",
+			"ranges": "cpp",
+			"regex": "cpp",
+			"set": "cpp",
+			"shared_mutex": "cpp",
+			"sstream": "cpp",
+			"stop_token": "cpp",
+			"streambuf": "cpp",
+			"system_error": "cpp",
+			"thread": "cpp",
+			"tuple": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"utility": "cpp",
+			"valarray": "cpp",
+			"variant": "cpp",
+			"vector": "cpp",
+			"xhash": "cpp",
+			"xlocale": "cpp",
+			"xlocinfo": "cpp",
+			"xmemory": "cpp",
+			"xstring": "cpp",
+			"xtree": "cpp",
+			"xutility": "cpp",
+			"xiosbase": "cpp",
+			"array": "cpp",
+			"string": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp",
+			"memory_resource": "cpp"
+		},
+		"C_Cpp.codeAnalysis.clangTidy.enabled": true,
+		"C_Cpp.intelliSenseMemoryLimit": 16384,
+		"C_Cpp.intelliSenseCacheSize": 32768,
+		"C_Cpp.default.cppStandard": "c++17",
+		"C_Cpp.default.cStandard": "c17",
+		"explorer.excludeGitIgnore": true,
+		"files.exclude": {
+			"**/Cache": true,
+			"**/build": true,
+			"**/build-mono": true,
+			"**/Assets": true
+		},
+		"C_Cpp.files.exclude": {
+			"**/.vscode": true,
+			"**/.vs": true,
+			"**/Cache": true,
+			"**/build": true,
+			"**/Assets": true
+		},
+		"cmake.generator": "Ninja Multi-Config",
+		"cmake.automaticReconfigure": false,
+		"cmake.configureOnEdit": false,
+		"cmake.setBuildTypeOnMultiConfig": true,
+		"terminal.integrated.shellIntegration.suggestEnabled": true
+	}
+}
