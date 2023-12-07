@@ -15,15 +15,14 @@
         "ConversationDemo"
     ],
     "platforms": [
-        "${Platforms}"
+        "Linux",
+        "Windows"
     ],
-    "icon_path": "preview.png",
+    "icon_path": "",
     "requirements": "",
     "documentation_url": "",
-    "dependencies": [
-    ],
-    "compatible_engines": [
-    ],
-    "engine_api_dependencies":[
-    ]
+    "dependencies": [],
+    "compatible_engines": [],
+    "engine_api_dependencies": [],
+    "repo_uri": ""
 }

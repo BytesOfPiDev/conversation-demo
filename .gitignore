@@ -22,6 +22,7 @@ server*.cfg
 _savebackup/
 *.swatches
 /imgui.ini
+compile_commands.json
 
 .cache/
 install/
