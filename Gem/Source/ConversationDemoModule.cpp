@@ -8,8 +8,7 @@
 
 namespace ConversationDemo
 {
-    class ConversationDemoModule
-        : public AZ::Module
+    class ConversationDemoModule : public AZ::Module
     {
     public:
         AZ_RTTI(ConversationDemoModule, ConversationDemoModuleTypeId, AZ::Module);
@@ -19,9 +18,11 @@ namespace ConversationDemo
             : AZ::Module()
         {
             // Push results of [MyComponent]::CreateDescriptor() into m_descriptors here.
-            m_descriptors.insert(m_descriptors.end(), {
-                ConversationDemoSystemComponent::CreateDescriptor(),
-            });
+            m_descriptors.insert(
+                m_descriptors.end(),
+                {
+                    ConversationDemoSystemComponent::CreateDescriptor(),
+                });
         }
 
         /**
@@ -34,6 +35,6 @@ namespace ConversationDemo
             };
         }
     };
-}// namespace ConversationDemo
+} // namespace ConversationDemo
 
 AZ_DECLARE_MODULE_CLASS(Gem_ConversationDemo, ConversationDemo::ConversationDemoModule)

@@ -1,0 +1,65 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "left strafe",
+            "selectedRootBone": "RootNode",
+            "id": "{F2B8713D-F883-5FCE-8348-CF91A413D1BA}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false,
+                                        "events": [
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "RightFoot",
+                                                        "mirrorSubject": "LeftFoot"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "LeftFoot",
+                                                        "mirrorSubject": "RightFoot"
+                                                    }
+                                                ],
+                                                "startTime": 0.2119089961051941,
+                                                "endTime": 0.2119089961051941
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips",
+                            "transitionZeroY": true
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/left strafe_fbx.procprefab",
+            "id": "{FCE6F3D6-A620-59F5-AE84-B28E761FFEFE}"
+        }
+    ]
+}

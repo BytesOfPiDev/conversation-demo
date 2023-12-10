@@ -1,0 +1,42 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "great sword jump attack",
+            "selectedRootBone": "RootNode",
+            "id": "{1C18C4D4-29B5-5CA7-858E-CDF62D8B2D9E}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/greatsword/great sword jump attack_fbx.procprefab",
+            "id": "{7B7A4ABB-B099-5855-8BC1-04571EFBDE4B}"
+        }
+    ]
+}

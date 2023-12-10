@@ -19,7 +19,10 @@
                 "$type": "EditorEntitySortComponent",
                 "Id": 14126657869720434043,
                 "Child Entity Order": [
-                    "Entity_[1176639161715]"
+                    "Entity_[1176639161715]",
+                    "Entity_[709661113256]",
+                    "Entity_[885754772392]",
+                    "Entity_[77150380622627]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -249,14 +252,14 @@
                     "Parent Entity": "Entity_[1176639161715]",
                     "Transform Data": {
                         "Translate": [
-                            -2.3000001907348633,
-                            -3.9368600845336914,
-                            1.0
+                            0.0,
+                            -3.0,
+                            2.0
                         ],
                         "Rotate": [
-                            -2.050307512283325,
-                            1.9552897214889526,
-                            -43.623355865478516
+                            -12.0,
+                            0.0,
+                            1.0
                         ]
                     }
                 },
@@ -266,18 +269,20 @@
                 },
                 "Component_[5265045084611556958]": {
                     "$type": "EditorDisabledCompositionComponent",
-                    "Id": 5265045084611556958
+                    "Id": 5265045084611556958,
+                    "DisabledComponents": {
+                        "Component_[7255796294953281766]": {
+                            "$type": "GenericComponentWrapper",
+                            "Id": 7255796294953281766,
+                            "m_template": {
+                                "$type": "FlyCameraInputComponent"
+                            }
+                        }
+                    }
                 },
                 "Component_[7169798125182238623]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 7169798125182238623
-                },
-                "Component_[7255796294953281766]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 7255796294953281766,
-                    "m_template": {
-                        "$type": "FlyCameraInputComponent"
-                    }
                 },
                 "Component_[8866210352157164042]": {
                     "$type": "EditorInspectorComponent",
@@ -550,6 +555,691 @@
                 "Component_[931091830724002070]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 931091830724002070
+                }
+            }
+        },
+        "Entity_[545843525166]": {
+            "Id": "Entity_[545843525166]",
+            "Name": "XBotText",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 10572907789815723665
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8311525792287038501
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 7482970203440193293
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 12465142604370530633
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 3550572976967941275
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 4545372336640584495
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 1618494015783621920
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 17858837942249149190
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14336636533591245238,
+                    "Parent Entity": "Entity_[885754772392]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            1.0,
+                            2.0
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[709661113256]": {
+            "Id": "Entity_[709661113256]",
+            "Name": "Player (YBot)",
+            "Components": {
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 5214877181576531078,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{24802D32-689A-5610-935C-7B5E5804E9FF}",
+                            "subId": 2790840828
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/characters/ybot/ybot.actor"
+                    },
+                    "AttachmentTarget": ""
+                },
+                "EditorAnimGraphComponent": {
+                    "$type": "EditorAnimGraphComponent",
+                    "Id": 14680779980721558605,
+                    "AnimGraphAsset": {
+                        "assetId": {
+                            "guid": "{153F2FAA-38E4-5E98-8152-DF3FECD72249}"
+                        },
+                        "assetHint": "assets/characters/ybot/ybot.animgraph"
+                    },
+                    "MotionSetAsset": {
+                        "assetId": {
+                            "guid": "{C0E0C79F-11D5-5DDB-8A21-DD24E1CD2FFD}"
+                        },
+                        "assetHint": "assets/characters/default.motionset"
+                    },
+                    "ActiveMotionSetName": "Default",
+                    "ParameterDefaults": {
+                        "Parameters": [
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 1055411635,
+                                "name": "in_place"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 4070033909,
+                                "name": "gs_attack_swing"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 1407417284,
+                                "name": "gs_attack_bash"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 3941785246,
+                                "name": "status_executing"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 1080796025,
+                                "name": "status_executing_windup"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 3286417138,
+                                "name": "status_executing_contact"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 2289907775,
+                                "name": "status_executing_recovery"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 3827439745,
+                                "name": "status_idle"
+                            }
+                        ]
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 15682687509821272596
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 14483187075876983199
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 18094650852306078665,
+                    "Child Entity Order": [
+                        "Entity_[77158970557219]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 17299170108803036141
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 521415277204958995
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 10916491228873323342
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 10913550082549402519
+                },
+                "EditorScriptCanvasComponent": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 14047157288482095851,
+                    "configuration": {
+                        "sourceHandle": {
+                            "id": "{9C18DBDD-0585-53A3-9D79-DDAFDE6D0AC2}",
+                            "path": "Assets/Characters/ybot/ybot.scriptcanvas"
+                        },
+                        "sourceName": "ybot.scriptcanvas",
+                        "propertyOverrides": {
+                            "source": {
+                                "id": "{9C18DBDD-0585-53A3-9D79-DDAFDE6D0AC2}",
+                                "path": "Assets/Characters/ybot/ybot.scriptcanvas"
+                            },
+                            "variables": [
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 1
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "EntityId",
+                                        "value": ""
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{B4FDDC90-AF42-427D-85C1-44B4AA583291}"
+                                    },
+                                    "VariableName": "TextEntity",
+                                    "InitialValueSource": 1
+                                },
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 1
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "EntityId",
+                                        "value": ""
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{B6D9549F-C040-454E-A062-99BB0392C4FF}"
+                                    },
+                                    "VariableName": "XBot",
+                                    "InitialValueSource": 1
+                                }
+                            ],
+                            "overrides": [
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 1
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "EntityId",
+                                        "value": ""
+                                    },
+                                    "InputControlVisibility": {
+                                        "Value": 850104567
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{B4FDDC90-AF42-427D-85C1-44B4AA583291}"
+                                    },
+                                    "VariableName": "TextEntity",
+                                    "InitialValueSource": 1
+                                },
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 1
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "EntityId",
+                                        "value": ""
+                                    },
+                                    "InputControlVisibility": {
+                                        "Value": 850104567
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{B6D9549F-C040-454E-A062-99BB0392C4FF}"
+                                    },
+                                    "VariableName": "XBot",
+                                    "InitialValueSource": 1
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorTagComponent": {
+                    "$type": "EditorTagComponent",
+                    "Id": 562596991769016081
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 14586765289598460575
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14271945917967176465,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            -2.0,
+                            -0.000002229595111202798,
+                            0.0
+                        ],
+                        "Rotate": [
+                            0.0,
+                            0.0,
+                            -89.99994659423828
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[77150380622627]": {
+            "Id": "Entity_[77150380622627]",
+            "Name": "Game",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 9719366583346298023
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 7133973692091236573
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 8080124739574002267,
+                    "Child Entity Order": [
+                        "Entity_[77154675589923]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 3232103058672474646
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 17002717518732733585
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5312729990703069422
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 17923726576050946642
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 1041635933536723395
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 4950999088472874217,
+                    "Parent Entity": "Entity_[1146574390643]"
+                }
+            }
+        },
+        "Entity_[77154675589923]": {
+            "Id": "Entity_[77154675589923]",
+            "Name": "SimpleConversationUI",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 8029858510811072022
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 9540266262243960610
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 16143355963508023149
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 6276662816458253344
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 13705381879018372116
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 9101340159802286302
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 13157261705455809916
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 17272169198369710277
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 15558159846041692637,
+                    "Parent Entity": "Entity_[77150380622627]"
+                }
+            }
+        },
+        "Entity_[77158970557219]": {
+            "Id": "Entity_[77158970557219]",
+            "Name": "YBotText",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 9900188469746616234
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8234992548950560707
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 11584662747695927242
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 11174422172545800722
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 13071890475919020130
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 3269887697082975297
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 16188247182444824528
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 18182304530092326481
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 3767737438245761625,
+                    "Parent Entity": "Entity_[709661113256]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.0,
+                            2.5443944931030273
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[885754772392]": {
+            "Id": "Entity_[885754772392]",
+            "Name": "NPC (XBot)",
+            "Components": {
+                "EditorActorComponent": {
+                    "$type": "EditorActorComponent",
+                    "Id": 17515647970084773013,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{44456FE0-6064-526D-9D76-EEED9DE31E8A}",
+                            "subId": 2736384690
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/characters/xbot/xbot.actor"
+                    },
+                    "AttachmentTarget": ""
+                },
+                "EditorAnimGraphComponent": {
+                    "$type": "EditorAnimGraphComponent",
+                    "Id": 7938342434973799619,
+                    "AnimGraphAsset": {
+                        "assetId": {
+                            "guid": "{153F2FAA-38E4-5E98-8152-DF3FECD72249}"
+                        },
+                        "assetHint": "assets/characters/ybot/ybot.animgraph"
+                    },
+                    "MotionSetAsset": {
+                        "assetId": {
+                            "guid": "{C0E0C79F-11D5-5DDB-8A21-DD24E1CD2FFD}"
+                        },
+                        "assetHint": "assets/characters/default.motionset"
+                    },
+                    "ActiveMotionSetName": "Default",
+                    "ParameterDefaults": {
+                        "Parameters": [
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 1055411635,
+                                "name": "in_place"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 4070033909,
+                                "name": "gs_attack_swing"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 1407417284,
+                                "name": "gs_attack_bash"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 3941785246,
+                                "name": "status_executing"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 1080796025,
+                                "name": "status_executing_windup"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 3286417138,
+                                "name": "status_executing_contact"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 2289907775,
+                                "name": "status_executing_recovery"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 3827439745,
+                                "name": "status_idle"
+                            }
+                        ]
+                    }
+                },
+                "EditorDialogueComponent": {
+                    "$type": "EditorDialogueComponent",
+                    "Id": 13409362435982275749,
+                    "Config": {
+                        "Conversation Assets": {
+                            "assetId": {
+                                "guid": "{CE21E31E-102B-53F3-80C6-9319FC0EC018}",
+                                "subId": 1
+                            },
+                            "assetHint": "assets/conversations/main.conversationasset"
+                        },
+                        "Display Name": "XBot the First of Her Name",
+                        "Speaker Icon": {
+                            "assetId": {
+                                "guid": "{0CF94EEF-6AAD-501B-AD08-7D201AD9A323}",
+                                "subId": 1000
+                            },
+                            "assetHint": "icons/animation/close.png.streamingimage"
+                        },
+                        "Speaker Tag": "xbot"
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 3301132724626594727
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 5478454163425592102
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 6708483438838760876,
+                    "Child Entity Order": [
+                        "Entity_[545843525166]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 84568280231599210
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 7576871388285238386
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 9114156982384366339
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 16027883628194209277
+                },
+                "EditorScriptCanvasComponent": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 3851887335391470645,
+                    "configuration": {
+                        "sourceHandle": {
+                            "id": "{576A607A-93EB-547E-9B43-1FE80295F621}",
+                            "path": "Assets/Characters/xbot/xbot.scriptcanvas"
+                        },
+                        "sourceName": "xbot.scriptcanvas",
+                        "propertyOverrides": {
+                            "source": {
+                                "id": "{576A607A-93EB-547E-9B43-1FE80295F621}",
+                                "path": "Assets/Characters/xbot/xbot.scriptcanvas"
+                            },
+                            "variables": [
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 1
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "EntityId",
+                                        "value": ""
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{684D8AE6-17D0-4CB9-9623-CEDDF67787C4}"
+                                    },
+                                    "VariableName": "TextEntity",
+                                    "InitialValueSource": 1
+                                },
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 1
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "EntityId",
+                                        "value": ""
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{9DB74D45-2BBB-4078-B6EC-32EE0860DDE5}"
+                                    },
+                                    "VariableName": "Player",
+                                    "InitialValueSource": 1
+                                }
+                            ],
+                            "overrides": [
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 1
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "EntityId",
+                                        "value": "Entity_[545843525166]"
+                                    },
+                                    "InputControlVisibility": {
+                                        "Value": 850104567
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{684D8AE6-17D0-4CB9-9623-CEDDF67787C4}"
+                                    },
+                                    "VariableName": "TextEntity",
+                                    "InitialValueSource": 1
+                                },
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 1
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "EntityId",
+                                        "value": "Entity_[709661113256]"
+                                    },
+                                    "InputControlVisibility": {
+                                        "Value": 850104567
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{9DB74D45-2BBB-4078-B6EC-32EE0860DDE5}"
+                                    },
+                                    "VariableName": "Player",
+                                    "InitialValueSource": 1
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorTagComponent": {
+                    "$type": "EditorTagComponent",
+                    "Id": 11573337588330916634
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 4572685774947983442
+                },
+                "ScriptEditorComponent": {
+                    "$type": "ScriptEditorComponent",
+                    "Id": 17190146291961501779,
+                    "ScriptComponent": {
+                        "Script": {
+                            "assetId": {
+                                "guid": "{AC57B205-BC12-5CB3-B5D4-893C449BE07B}",
+                                "subId": 1
+                            },
+                            "assetHint": "assets/conversations/main.luac"
+                        }
+                    },
+                    "ScriptAsset": {
+                        "assetId": {
+                            "guid": "{AC57B205-BC12-5CB3-B5D4-893C449BE07B}",
+                            "subId": 1
+                        },
+                        "assetHint": "assets/conversations/main.luac"
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 6126603648862606170,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            2.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Rotate": [
+                            0.0,
+                            0.0,
+                            90.0
+                        ]
+                    }
                 }
             }
         }

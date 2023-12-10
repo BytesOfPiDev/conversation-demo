@@ -1,0 +1,42 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "idle",
+            "selectedRootBone": "RootNode",
+            "id": "{D91A2BE2-EEEE-54F2-8F42-209A8A3376F6}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips",
+                            "transitionZeroX": true,
+                            "transitionZeroY": true
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false
+                                    },
+                                    {
+                                        "name": "ability"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

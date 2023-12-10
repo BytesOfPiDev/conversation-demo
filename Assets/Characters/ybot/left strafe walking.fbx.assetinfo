@@ -1,0 +1,85 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "left strafe walking",
+            "selectedRootBone": "RootNode",
+            "id": "{6B271A94-9ADE-506F-9BD7-572D1FC3AC66}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false,
+                                        "events": [
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "RightFoot",
+                                                        "mirrorSubject": "LeftFoot"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "LeftFoot",
+                                                        "mirrorSubject": "RightFoot"
+                                                    }
+                                                ],
+                                                "startTime": 0.2503010034561157,
+                                                "endTime": 0.2503010034561157
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips",
+                            "transitionZeroY": true
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/left strafe walking_fbx.procprefab",
+            "id": "{8482B57B-8E02-51C7-B171-E798523E4311}"
+        },
+        {
+            "$type": "MotionGroup",
+            "name": "left strafe walking-1",
+            "selectedRootBone": "RootNode",
+            "id": "{211BB981-F291-441F-A827-F235C598EAC0}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips",
+                            "transitionZeroY": true
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

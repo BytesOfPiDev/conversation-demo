@@ -1,0 +1,42 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "great sword slash (3)",
+            "selectedRootBone": "RootNode",
+            "id": "{E4CC87F2-E458-5F0F-826E-FBC6F9792A32}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/greatsword/great sword slash (3)_fbx.procprefab",
+            "id": "{024CBCCA-A600-5122-87AF-BB8031A320F0}"
+        }
+    ]
+}

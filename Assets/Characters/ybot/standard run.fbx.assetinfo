@@ -1,0 +1,65 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "standard run",
+            "selectedRootBone": "RootNode",
+            "id": "{2716E165-3774-558A-9876-A414F87ABE2F}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false,
+                                        "events": [
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "RightFoot",
+                                                        "mirrorSubject": "LeftFoot"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "LeftFoot",
+                                                        "mirrorSubject": "RightFoot"
+                                                    }
+                                                ],
+                                                "startTime": 0.24277399480342865,
+                                                "endTime": 0.24277399480342865
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips",
+                            "transitionZeroX": true
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/standard run_fbx.procprefab",
+            "id": "{E7BEB69E-4181-58D5-8A9E-AF76B3E864C3}"
+        }
+    ]
+}

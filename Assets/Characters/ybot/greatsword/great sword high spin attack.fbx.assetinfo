@@ -1,0 +1,51 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "great sword high spin attack",
+            "selectedRootBone": "RootNode",
+            "id": "{14EFFBAE-067B-5611-8B53-4F8047E5737E}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false,
+                                        "events": [
+                                            {
+                                                "startTime": 1.0437300205230713,
+                                                "endTime": 1.2025580406188965
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Ability"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/greatsword/great sword high spin attack_fbx.procprefab",
+            "id": "{78F6D2DD-65F1-5B7E-8383-3AE37C02E5C1}"
+        }
+    ]
+}

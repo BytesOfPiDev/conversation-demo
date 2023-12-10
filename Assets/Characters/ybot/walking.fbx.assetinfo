@@ -1,0 +1,65 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "walking",
+            "selectedRootBone": "RootNode",
+            "id": "{A7E8A702-2367-5F53-A507-E156FF256497}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false,
+                                        "events": [
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "RightFoot",
+                                                        "mirrorSubject": "LeftFoot"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "LeftFoot",
+                                                        "mirrorSubject": "RightFoot"
+                                                    }
+                                                ],
+                                                "startTime": 0.2770789861679077,
+                                                "endTime": 0.2770789861679077
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips",
+                            "transitionZeroX": true
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/walking_fbx.procprefab",
+            "id": "{E8D181F2-4BA7-5D6F-B6CC-47E6F793456D}"
+        }
+    ]
+}

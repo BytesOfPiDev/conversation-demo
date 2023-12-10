@@ -1,0 +1,67 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "right strafe walking",
+            "selectedRootBone": "RootNode",
+            "id": "{072D04D3-E69B-557F-BD96-9868E9C656B9}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false,
+                                        "events": [
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "LeftFoot",
+                                                        "mirrorSubject": "RightFoot"
+                                                    }
+                                                ],
+                                                "startTime": 0.8773289918899536,
+                                                "endTime": 0.8773289918899536
+                                            },
+                                            {
+                                                "eventDatas": [
+                                                    {
+                                                        "$type": "TwoStringEventData",
+                                                        "subject": "RightFoot",
+                                                        "mirrorSubject": "LeftFoot"
+                                                    }
+                                                ],
+                                                "startTime": 0.24068300426006317,
+                                                "endTime": 0.24068300426006317
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips",
+                            "transitionZeroY": true
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/right strafe walking_fbx.procprefab",
+            "id": "{97F2480D-E2F2-5F91-B9FF-A083A490C440}"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "values": [
+        {
+            "$type": "MotionGroup",
+            "name": "jump",
+            "selectedRootBone": "RootNode",
+            "id": "{F9B70351-AD38-5403-88A4-112432BE6915}",
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MotionSamplingRule"
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::MotionMetaDataRule",
+                        "data": {
+                            "motionEventTable": {
+                                "tracks": [
+                                    {
+                                        "$type": "AnimGraphSyncTrack",
+                                        "name": "Sync",
+                                        "deletable": false
+                                    }
+                                ]
+                            },
+                            "motionExtractionFlags": 1
+                        }
+                    },
+                    {
+                        "$type": "EMotionFX::Pipeline::Rule::RootMotionExtractionRule",
+                        "data": {
+                            "sampleJoint": "RootNode.mixamorig:Hips"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Characters/ybot/jump_fbx.procprefab",
+            "id": "{F07BC6FF-2D30-5A19-8348-DDAD8B56A9D9}"
+        }
+    ]
+}
