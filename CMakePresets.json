@@ -5,25 +5,13 @@
         "minor": 23,
         "patch": 0
     },
-    "include": [
-        "./user/cmake/engine/CMakePresets.json"
-    ],
+    "include": ["./user/cmake/engine/CMakePresets.json"],
     "configurePresets": [
         {
-            "name": "ConversationDemo-default",
-            "description": "",
-            "hidden": true
-        },
-        {
-            "name": "ConversationDemo-linux",
-            "displayName": "ConversationDemo  (Linux)",
-            "description": "ConversationDemo Linux default configuration",
-            "binaryDir": "${sourceDir}/build/linux",
-            "inherits": [
-                "linux-ninja",
-                "no-unity",
-                "linux-non-monolithic"
-            ],
+            "name": "conversationdemo-default",
+            "description": "Placeholder configuration that buildPresets and testPresets can inherit from",
+            "hidden": true,
+            "inherits": ["linux-default"],
             "cacheVariables": {
                 "AZ_USE_PHYSX5": {
                     "type": "BOOL",
@@ -36,50 +24,43 @@
                 "LY_DISABLE_TEST_MODULES": {
                     "type": "BOOL",
                     "value": false
+                }
+            }
+        },
+        {
+            "name": "conversationdemo-linux-default",
+            "displayName": "ConversationDemo (Linux)",
+            "description": "Conversation Demo default configuration for Linux",
+            "hidden": false,
+            "binaryDir": "${sourceDir}/build/linux",
+            "inherits": ["no-unity", "conversationdemo-default"],
+            "generator": "Ninja Multi-Config",
+            "cacheVariables": {
+                "O3DE_EXTRA_CXX_FLAGS": {
+                    "type": "STRING",
+                    "value": "-fno-omit-frame-pointer -fno-optimize-sibling-calls -pipe -fasynchronous-unwind-tables"
                 },
                 "CMAKE_C_COMPILER": {
                     "type": "STRING",
-                    "value": "clang-14"
+                    "value": "clang-17"
                 },
                 "CMAKE_CXX_COMPILER": {
                     "type": "STRING",
-                    "value": "clang++-14"
+                    "value": "clang++-17"
                 }
             }
         }
     ],
     "buildPresets": [
         {
-            "name": "ConversationDemo-linux",
-            "description": "",
-            "hidden": false,
-            "configurePreset": "ConversationDemo-linux",
-            "inherits": [
-                "debug"
-            ],
-            "targets": [
-                "AssetProcessor",
-                "Editor",
-                "ConversationDemo",
-                "Conversation",
-                "Conversation.Tests",
-                "Conversation.Editor",
-                "Conversation.Editor.Tests",
-                "ConversationCanvas"
-            ]
-        }
-    ],
-    "testPresets": [
+            "name": "conversationdemo-linux-profile",
+            "configurePreset": "conversationdemo-linux-default",
+            "configuration": "profile"
+        },
         {
-            "name": "ConversationDemo-tests-linux",
-            "description": "Builds the smoke and main test suite dependencies",
-            "hidden": false,
-            "configurePreset": "ConversationDemo-linux",
-            "filter": {
-                "include": {
-                    "name": "Dialogue*"
-                }
-            }
+            "name": "conversationdemo-linux-debug",
+            "configurePreset": "conversationdemo-linux-default",
+            "configuration": "debug"
         }
     ]
 }
